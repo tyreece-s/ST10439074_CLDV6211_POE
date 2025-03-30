@@ -44,6 +44,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/tyreece/GitHub/ST10439074_CLDV6211_POE/EventEase/Views/Venues/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVudWVzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tyreece/GitHub/ST10439074_CLDV6211_POE/EventEase/Views/Venues/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVudWVzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tyreece/GitHub/ST10439074_CLDV6211_POE/EventEase/Views/Venues/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVudWVzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tyreece/GitHub/ST10439074_CLDV6211_POE/EventEase/Views/Venues/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVudWVzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tyreece/GitHub/ST10439074_CLDV6211_POE/EventEase/Views/Venues/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVudWVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/tyreece/GitHub/ST10439074_CLDV6211_POE/EventEase/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
