@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using EventEase.Data;
 namespace EventEase;
 
 public class Program
@@ -5,6 +8,8 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        builder.Services.AddDbContext<EventEaseContext>(options =>
+            options.UseSqlite(builder.Configuration.GetConnectionString("EventEaseContext") ?? throw new InvalidOperationException("Connection string 'EventEaseContext' not found.")));
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
