@@ -49,8 +49,8 @@ namespace EventEase.Controllers
         // GET: Bookings/Create
         public IActionResult Create()
         {
-            ViewData["EventId"] = new SelectList(_context.Event, "EventId", "EventId");
-            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueId");
+            ViewData["EventId"] = new SelectList(_context.Event, "EventId", "EventName");
+            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueName");
             return View();
         }
 
@@ -67,8 +67,8 @@ namespace EventEase.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["EventId"] = new SelectList(_context.Event, "EventId", "EventId", booking.EventId);
-            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueId", booking.VenueId);
+            ViewData["EventId"] = new SelectList(_context.Event, "EventId", "EventName", booking.EventId);
+            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueName", booking.VenueId);
             return View(booking);
         }
 
@@ -85,8 +85,8 @@ namespace EventEase.Controllers
             {
                 return NotFound();
             }
-            ViewData["EventId"] = new SelectList(_context.Event, "EventId", "EventId", booking.EventId);
-            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueId", booking.VenueId);
+            ViewData["EventId"] = new SelectList(_context.Event, "EventId", "EventName", booking.EventId);
+            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueName", booking.VenueId);
             return View(booking);
         }
 
@@ -122,8 +122,8 @@ namespace EventEase.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["EventId"] = new SelectList(_context.Event, "EventId", "EventId", booking.EventId);
-            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueId", booking.VenueId);
+            ViewData["EventId"] = new SelectList(_context.Event, "EventId", "EventName", booking.EventId);
+            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueName", booking.VenueId);
             return View(booking);
         }
 
