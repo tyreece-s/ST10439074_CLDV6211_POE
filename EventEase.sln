@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventEase", "EventEase\EventEase.csproj", "{60F8D937-B979-48B9-AA2E-5D959398132A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60F8D937-B979-48B9-AA2E-5D959398132A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F8D937-B979-48B9-AA2E-5D959398132A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F8D937-B979-48B9-AA2E-5D959398132A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F8D937-B979-48B9-AA2E-5D959398132A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
