@@ -1,0 +1,19 @@
+# OS-generated files
+.DS_Store
+
+# Rider/JetBrains IDE files
+.idea/
+*.sln.iml
+
+# Build directories
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.cache
+
+# Other temporary files
+*.log
+

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tyreece/RiderProjects/EventEase/EventEase/EventEase.csproj": {}
+    "/Users/tyreece/GitHub/ST10439074_CLDV6211_POE/EventEase/EventEase.csproj": {}
   },
   "projects": {
-    "/Users/tyreece/RiderProjects/EventEase/EventEase/EventEase.csproj": {
+    "/Users/tyreece/GitHub/ST10439074_CLDV6211_POE/EventEase/EventEase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tyreece/RiderProjects/EventEase/EventEase/EventEase.csproj",
+        "projectUniqueName": "/Users/tyreece/GitHub/ST10439074_CLDV6211_POE/EventEase/EventEase.csproj",
         "projectName": "EventEase",
-        "projectPath": "/Users/tyreece/RiderProjects/EventEase/EventEase/EventEase.csproj",
+        "projectPath": "/Users/tyreece/GitHub/ST10439074_CLDV6211_POE/EventEase/EventEase.csproj",
         "packagesPath": "/Users/tyreece/.nuget/packages/",
-        "outputPath": "/Users/tyreece/RiderProjects/EventEase/EventEase/obj/",
+        "outputPath": "/Users/tyreece/GitHub/ST10439074_CLDV6211_POE/EventEase/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tyreece/.nuget/NuGet/NuGet.Config"
