@@ -13,5 +13,6 @@ public class Event
     public DateTime EventDate { get; set; }
     public string Description { get; set; }
     
-    
+    // Nullable Navigation Property (EF will use this to link any related bookings for this event)
+    public List<Booking>? Bookings { get; set; }
 }

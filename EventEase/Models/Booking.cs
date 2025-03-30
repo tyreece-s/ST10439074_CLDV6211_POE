@@ -13,14 +13,14 @@ public class Booking
     public DateTime BookingDate { get; set; }
     
     //Venue Foreign Key
-    public int VenueId { get; set; } 
+    public int VenueId { get; set; } // The column for venue fk
     
-    [ForeignKey("VenueId")]  
-    public Venue? Venue { get; set; } 
+    [ForeignKey("VenueId")]  // "Tells" EF this venue nav property uses that col as its fk
+    public Venue? Venue { get; set; } // Nav Property which links related Venues
     
     //Event Foreign Key
-    public int EventId { get; set; }
+    public int EventId { get; set; } // The column for event fk
     
-    [ForeignKey("EventId")]
-    public Event? Event { get; set; }
+    [ForeignKey("EventId")] // "Tells" EF this event nav property uses that col as its fk
+    public Event? Event { get; set; } // Nav Property which links related Events
 }
