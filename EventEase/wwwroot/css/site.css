@@ -1,5 +1,28 @@
+/* Import Inter font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+/* Colour Palette */
+
+:root {
+  --colour-black: #000000;
+  --colour-transparent-black: #111111;
+  --colour-dim-grey: #66666E;
+  --colour-taupe-grey: #9999A1;
+  --colour-white-soft: #F4F4F6;
+  --colour-veronica: #8C45FF;
+}
+
+
+/* Global css setup */
+
 html {
   font-size: 14px;
+  position: relative;
+  min-height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--colour-black);
+  color: var(--colour-white-soft);
 }
 
 @media (min-width: 768px) {
@@ -8,24 +31,143 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
   margin-bottom: 60px;
+  background-color: var(--colour-black);
+  color: var(--colour-white-soft);
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+/* NavBar and Footer styling (!important overrides default bootstrap styling */
+
+.navbar-brand {
+  color: var(--colour-white-soft) !important;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.navbar,
+footer,
+.footer {
+  background-color: var(--colour-black) !important;
+  color: var(--colour-white-soft) !important;
+  border-color: var(--colour-taupe-grey); /* Grey border line under navbar */
 }
+
+.nav-link {
+  color: var(--colour-taupe-grey) !important; /* grey links */
+}
+
+.nav-link:hover {
+  color: var(--colour-veronica) !important; /* purple hover */
+}
+
+/* links */
+a {
+  color: var(--colour-taupe-grey);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--colour-veronica);
+}
+
+/* buttons */
+.btn {
+  background-color: var(--colour-dim-grey);
+  border-color: var(--colour-dim-grey);
+  color: var(--colour-white-soft);
+}
+
+.btn:hover {
+  background-color: var(--colour-veronica);
+  border-color: var(--colour-veronica);
+  color: var(--colour-white-soft);
+}
+
+/* cards */
+.card {
+  background-color: var(--colour-transparent-black);
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(244, 244, 246, 0.08);
+  color: var(--colour-white-soft);
+}
+
+/* headings */
+h1, h2, h3, h4, h5 {
+  color: var(--colour-white-soft);
+  font-weight: 700;
+}
+
+/* other text (paragraphs etc) */
+.card-text,
+.text-muted,
+small {
+  color: var(--colour-taupe-grey) !important;
+}
+
+/* Date Picker */
+input[type="date"],
+input[type="datetime-local"],
+input[type="time"] {
+  color-scheme: dark;
+  accent-color: var(--colour-veronica);
+}
+
+/* forms */
+.form-control {
+  background-color: var(--colour-black);
+  border: 1px solid var(--colour-taupe-grey); 
+  color: var(--colour-white-soft);
+  box-shadow: none; 
+}
+
+.form-control::placeholder {
+  color: var(--colour-taupe-grey);
+}
+
+.form-control:focus {
+  background-color: var(--colour-black);
+  color: var(--colour-white-soft);
+  border-color: var(--colour-white-soft);
+  box-shadow: 0 0 0 0.25rem var(--colour-white-soft);
+}
+
+/* horizontal line */
+hr {
+  height: 3px;
+  background-color: #9999A1;
+  border: none;
+  opacity: 1;
+}
+
+/* tables */
+.table {
+  width: 100%;
+  background-color: var(--colour-black) !important;
+  color: var(--colour-white-soft) !important;
+  border-collapse: collapse !important;
+  border: 1px solid var(--colour-taupe-grey) !important;
+}
+
+.table th,
+.table td {
+  background-color: var(--colour-black) !important;
+  color: var(--colour-white-soft) !important;
+  border: 1px solid var(--colour-taupe-grey) !important;
+  opacity: 1 !important;
+}
+
+.table thead {
+  background-color: var(--colour-black) !important;
+}
+
+.table tbody tr {
+  background-color: var(--colour-black) !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--colour-transparent-black) !important;
+}
+
+
