@@ -12,7 +12,7 @@ public class Event
     [Display(Name = "Event")]
     public string EventName { get; set; }
     
-    [Display(Name = "Event Date & Time")]
+    [Display(Name = "Date & Time")]
     [DataType(DataType.DateTime)]
     public DateTime EventDate { get; set; }
     
