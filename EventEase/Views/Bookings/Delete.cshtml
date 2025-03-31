@@ -15,7 +15,7 @@
             @Html.DisplayNameFor(model => model.BookingDate)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.BookingDate)
+           @Model.BookingDate.ToString("dddd, d MMMM yyyy")
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Venue)

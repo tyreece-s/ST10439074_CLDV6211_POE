@@ -28,7 +28,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.BookingDate)
+                @item.BookingDate.ToString("dddd, d MMMM yyyy")
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Venue.VenueName)
