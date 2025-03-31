@@ -20,7 +20,7 @@
             @Html.DisplayNameFor(model => model.EventDate)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EventDate)
+            @Model.EventDate.ToString("dddd, d MMMM yyyy ' @ ' HH:mm")
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Description)
