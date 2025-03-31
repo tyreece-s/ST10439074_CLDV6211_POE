@@ -4,11 +4,17 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+@* Bold Heading and Create Button *@
+<h1><strong>All Venues</strong></h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<a asp-action="Create" class="btn btn-success mb-3">
+    <i class="bi bi-plus-circle-fill me-1"></i>
+    Add Venue
+</a>
+
+@* Thick Divider Line *@
+<hr class="mb-4" style="height: 3px; background-color: #000; border: none;" />
+
 
 @* Displaying the Venues with Cards instead of the basic table using Bootstrap *@
 
