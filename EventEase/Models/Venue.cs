@@ -19,7 +19,7 @@ public class Venue
     public int Capacity { get; set; }
     
     [Display(Name = "Image Url")]
-    public string ImageUrl { get; set; }
+    public string? ImageUrl { get; set; }
     
     // Nullable Navigation Property (EF will use this to link any related bookings for this venue)
     public List<Booking>? Bookings { get; set; }
