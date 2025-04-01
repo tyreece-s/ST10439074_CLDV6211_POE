@@ -206,4 +206,12 @@ hr {
   background-color: var(--colour-transparent-black) !important;
 }
 
+/* Home Page */
+.hero-img {
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+
 

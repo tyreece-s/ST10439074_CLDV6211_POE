@@ -58,8 +58,8 @@ namespace EventEase.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Source - OpenAI Sora Generated Image - https://sora.com/g/gen_01jqs38xgefdsb2x0te0mgb5fy
-                venue.ImageUrl = "https://videos.openai.com/vg-assets/assets%2Ftask_01jqs36nn3enksv9pv767spfz3%2Fimg_0.webp?st=2025-04-01T15%3A00%3A50Z&se=2025-04-07T16%3A00%3A50Z&sks=b&skt=2025-04-01T15%3A00%3A50Z&ske=2025-04-07T16%3A00%3A50Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=9GZ4EH0y4d0Su6ss4mxjAGBEuVs%2BUJdHpQrM5lfCRbo%3D&az=oaivgprodscus";
+                // Source - OpenAI Sora Generated Image - https://sora.com/g/gen_01jqsnn52me8aahkk87xcz2fb1
+                venue.ImageUrl = "https://videos.openai.com/vg-assets/assets%2Ftask_01jqsntk5bek4bjxzw21jr568v%2Fimg_1.webp?st=2025-04-01T20%3A33%3A12Z&se=2025-04-07T21%3A33%3A12Z&sks=b&skt=2025-04-01T20%3A33%3A12Z&ske=2025-04-07T21%3A33%3A12Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=U7H5hzGjBSR6uEdSF%2FfMXj%2BktpsfE6QZ3j46EtsQHu0%3D&az=oaivgprodscus";
                 _context.Add(venue);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -99,7 +99,7 @@ namespace EventEase.Controllers
             {
                 try
                 {
-                    venue.ImageUrl = "https://videos.openai.com/vg-assets/assets%2Ftask_01jqs36nn3enksv9pv767spfz3%2Fimg_0.webp?st=2025-04-01T15%3A00%3A50Z&se=2025-04-07T16%3A00%3A50Z&sks=b&skt=2025-04-01T15%3A00%3A50Z&ske=2025-04-07T16%3A00%3A50Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=9GZ4EH0y4d0Su6ss4mxjAGBEuVs%2BUJdHpQrM5lfCRbo%3D&az=oaivgprodscus";
+                    venue.ImageUrl = "https://videos.openai.com/vg-assets/assets%2Ftask_01jqsntk5bek4bjxzw21jr568v%2Fimg_1.webp?st=2025-04-01T20%3A33%3A12Z&se=2025-04-07T21%3A33%3A12Z&sks=b&skt=2025-04-01T20%3A33%3A12Z&ske=2025-04-07T21%3A33%3A12Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=U7H5hzGjBSR6uEdSF%2FfMXj%2BktpsfE6QZ3j46EtsQHu0%3D&az=oaivgprodscus";
                     _context.Update(venue);
                     await _context.SaveChangesAsync();
                 }
