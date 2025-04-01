@@ -78,8 +78,8 @@ a:hover {
 
 /* buttons */
 .btn {
-  background-color: var(--colour-roseQuartzGrey);
-  border-color: var(--colour-roseQuartzGrey);
+  background-color: var(--colour-daviesGrey);
+  border-color: var(--colour-daviesGrey);
   color: var(--colour-seasaltWhite);
 }
 

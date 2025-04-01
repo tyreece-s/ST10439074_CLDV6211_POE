@@ -5,15 +5,22 @@
 }
 
 @* Bold Heading and Create Button *@
-<h1><strong>All Venues</strong></h1>
+<h1>
+    <strong>
+        All Venues |
+        <a asp-action="Create" class="btn btn">
+            <i class="bi bi-plus-circle-fill me-1"></i>
+            <strong>
+                Add New Venue
+            </strong>
+        </a>
+    </strong>
+</h1>
 
-<a asp-action="Create" class="btn btn-success mb-3">
-    <i class="bi bi-plus-circle-fill me-1"></i>
-    Add Venue
-</a>
+
 
 @* Thick Divider Line *@
-<hr class="mb-4" style="height: 3px; background-color: white; border: none;" />
+<hr class="mb-4" style="height: 3px; background-color: white; border: none;"/>
 
 
 @* Displaying the Venues with Cards instead of the basic table using Bootstrap *@
