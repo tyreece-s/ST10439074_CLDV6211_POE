@@ -58,6 +58,7 @@ namespace EventEase.Controllers
         {
             if (ModelState.IsValid)
             {
+                //venue.ImageUrl = "";
                 _context.Add(venue);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
