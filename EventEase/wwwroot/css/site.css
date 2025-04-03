@@ -184,6 +184,7 @@ hr {
   color: var(--colour-seasaltWhite) !important;
   border-collapse: collapse !important;
   border: 1px solid var(--colour-daviesGrey) !important;
+  table-layout: fixed;
 }
 
 .table th,
@@ -192,6 +193,7 @@ hr {
   color: var(--colour-seasaltWhite) !important;
   border: 1px solid var(--colour-daviesGrey) !important;
   opacity: 1 !important;
+  vertical-align: middle;
 }
 
 .table thead {

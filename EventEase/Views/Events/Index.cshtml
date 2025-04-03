@@ -4,28 +4,47 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+@* Bold Heading and Create Button *@
+<h1>
+    <strong>
+        All Events |
+        <a asp-action="Create" class="btn btn">
+            <i class="bi bi-plus-circle-fill me-1"></i>
+            <strong>
+                Create New Event
+            </strong>
+        </a>
+    </strong>
+</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@* Thick Divider Line *@
+<hr class="mb-4" style="height: 3px; background-color: white; border: none;"/>
+
+
 <table class="table">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.EventName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EventDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th></th>
-        </tr>
+    <tr>
+        <th>
+            <i class="bi bi-list-stars me-1"></i>
+            @Html.DisplayNameFor(model => model.EventName)
+        </th>
+        <th>
+            <i class="bi bi-bell me-1"></i>
+            @Html.DisplayNameFor(model => model.EventDate)
+        </th>
+        <th>
+            <i class="bi bi-stars me-1"></i>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            <i class="bi bi-gear me-1"></i>
+            Options
+        </th>
+    </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var item in Model)
+    {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.EventName)
@@ -37,11 +56,13 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
+                <div class="d-flex justify-content-around align-items-center">
                 <a asp-action="Edit" asp-route-id="@item.EventId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.EventId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.EventId">Delete</a>
+                </div>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>
