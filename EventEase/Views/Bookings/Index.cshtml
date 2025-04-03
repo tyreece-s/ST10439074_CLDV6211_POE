@@ -4,24 +4,43 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+@* Bold Heading and Create Button *@
+<h1>
+    <strong>
+        All Bookings |
+        <a asp-action="Create" class="btn btn">
+            <i class="bi bi-plus-circle-fill me-1"></i>
+            <strong>
+                Create New Booking
+            </strong>
+        </a>
+    </strong>
+</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
+@* Thick Divider Line *@
+<hr class="mb-4" style="height: 3px; background-color: white; border: none;"/>
+
+
 <table class="table">
     <thead>
         <tr>
             <th>
+                <i class="bi bi-calendar-date me-1"></i>
                 @Html.DisplayNameFor(model => model.BookingDate)
             </th>
             <th>
+                <i class="bi bi-globe-americas me-1"></i>
                 @Html.DisplayNameFor(model => model.Venue)
             </th>
             <th>
+                <i class="bi bi-ticket-perforated me-1"></i>
                 @Html.DisplayNameFor(model => model.Event)
             </th>
-            <th></th>
+            <th>
+                <i class="bi bi-gear me-1"></i>
+                Options
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -37,9 +56,11 @@
                 @Html.DisplayFor(modelItem => item.Event.EventName)
             </td>
             <td>
+                <div class="d-flex justify-content-around align-items-center">
                 <a asp-action="Edit" asp-route-id="@item.BookingId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.BookingId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.BookingId">Delete</a>
+                </div>
             </td>
         </tr>
 }
