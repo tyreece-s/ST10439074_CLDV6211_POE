@@ -13,7 +13,7 @@
   /*--colour-uclaBlue: #2274A5;*/
   --colour-palaniteBlue: #5438DC;
   --colour-crimsonRed: #D62839;
-  /*--colour-emeraldGreen: #23CE6B;*/
+  --colour-emeraldGreen: #23CE6B;
   --colour-darkCyan: #119DA4;
   --colour-magentaPink: #FA198B;
 }
@@ -106,6 +106,16 @@ a:hover {
 }
 
 .btn-confirmation:hover {
+  background-color: var(--colour-emeraldGreen);
+  border-color: var(--colour-emeraldGreen);
+}
+
+.btn-details {
+  background-color: var(--colour-roseQuartzGrey);
+  border-color: var(--colour-roseQuartzGrey);
+}
+
+.btn-details:hover {
   background-color: var(--colour-darkCyan);
   border-color: var(--colour-darkCyan);
 }
