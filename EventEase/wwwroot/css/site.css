@@ -76,6 +76,17 @@ a:hover {
   color: var(--colour-palaniteBlue);
 }
 
+/* privacy page links */
+.link-light {
+  color: var(--colour-seasaltWhite) !important;
+  text-decoration: underline;
+}
+
+.link-light:hover {
+  color: var(--colour-palaniteBlue) !important;
+  text-decoration-color: var(--colour-palaniteBlue) !important;
+}
+
 /* buttons */
 .btn {
   background-color: var(--colour-daviesGrey);
